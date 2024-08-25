@@ -153,12 +153,5 @@ return {
         position = "right",
       },
     },
-    --[[ config = function()
-      require("neo-tree").setup {
-        window = {
-          position = "right",
-        },
-      }
-    end, ]]
   },
 }
