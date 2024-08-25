@@ -80,12 +80,45 @@ return {
     opts = {
       presets = {
         bottom_search = false,
-        command_palette = true,
+        command_palette = false,
+        lsp_doc_border = true,
+        inc_rename = false,
       },
-      lsp = {
-        signature = {
-          enabled = false,
+      views = {
+        cmdline_popup = {
+          size = {
+            width = 60,
+            height = "auto",
+          },
         },
+        popupmenu = {
+          relative = "editor",
+          position = {
+            row = "67%",
+            col = "50%",
+          },
+          size = {
+            width = 60,
+            height = 10,
+          },
+          border = {
+            style = "rounded",
+            padding = { 0, 1 },
+          },
+          win_options = {
+            winhighlight = { Normal = "Normal", FloatBorder = "DiagnosticInfo" },
+          },
+        },
+      },
+    },
+  },
+  {
+    "folke/which-key.nvim",
+    opts = {
+      icons = {
+        breadcrumb = "»", -- symbol used in the command line area that shows your active key combo
+        separator = "➜", -- symbol used between a key and it's label
+        group = "", -- symbol prepended to a group
       },
     },
   },
