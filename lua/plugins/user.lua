@@ -84,6 +84,11 @@ return {
         lsp_doc_border = true,
         inc_rename = false,
       },
+      lsp = {
+        signature = {
+          enabled = false,
+        },
+      },
       views = {
         cmdline_popup = {
           size = {
