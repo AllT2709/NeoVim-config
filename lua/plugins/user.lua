@@ -1,3 +1,4 @@
+local pickers = require "telescope.pickers"
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
@@ -151,6 +152,35 @@ return {
     opts = {
       window = {
         position = "right",
+      },
+    },
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      defaults = {
+        preview = true,
+        layout_config = {
+          horizontal = {
+            prompt_position = "bottom",
+          },
+        },
+        file_ignore_patterns = {
+          "node_modules",
+          ".git",
+          "dist",
+          "build",
+        },
+        vimgrep_arguments = {
+          "rg",
+          "--color=never",
+          "--no-heading",
+          "--with-filename",
+          "--line-number",
+          "--column",
+          "--smart-case",
+        },
       },
     },
   },
