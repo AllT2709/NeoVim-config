@@ -8,10 +8,14 @@ return {
   -- style = "night",             -- Puedes elegir "night", "storm", "day" o "moon"
 
     transparent = true,          -- Activar transparencia
-    terminal_colors = true,      -- Usa colores del tema en el terminal
+    terminal_colors = false,      -- Usa colores del tema en el terminal
     styles = {
         sidebars = "transparent", -- Hace transparentes las barras laterales
         floats = "transparent",   -- Hace transparentes las ventanas flotantes
+        variables = {italic = false },                     -- Puedes agregar cursiva si lo deseas
+        parameters = { italic = true },
+        keywords = { italic = true},
+        functions = {italic = false},
     },
     on_colors = function(colors)
         colors.bg = "#1a1b26"  -- Color de fondo, ajustado para un tono TokyoNight
