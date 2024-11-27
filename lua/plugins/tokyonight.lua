@@ -18,9 +18,18 @@ return {
         functions = {italic = false},
     },
     on_colors = function(colors)
-        colors.bg = "#1a1b26"  -- Color de fondo, ajustado para un tono TokyoNight
+       -- colors.bg = "#1a1b26"  -- Color de fondo, ajustado para un tono TokyoNight
     end,
     on_highlights = function(hl, c)
+
+        hl["@variable.parameter"] = { fg = c.orange, italic = true }  -- Color para parámetros de funciones
+        hl["@variable.builtin"] = { italic = true, fg = c.red }
+        hl["@punctuation.bracket"] = { fg = "#82aaff" }
+
+        hl.DiagnosticVirtualTextHint = {fg = "#4fd6be"}
+        hl.DiagnosticVirtualTextError = {fg = "#c53b53"}
+        hl.DiagnosticVirtualTextInfo = {fg = "#0db9d7"}
+        hl.DiagnosticVirtualTextWarn = {fg = "#ffc777"}
 
         hl.StatusLine = { bg = "none", fg = c.fg }
         hl.StatusLineNC = { bg = "none", fg = c.fg_dark }

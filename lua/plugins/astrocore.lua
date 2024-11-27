@@ -42,6 +42,9 @@ return {
     mappings = {
       -- first key is the mode
       n = {
+        ["f"] = {
+          "<cmd>Oil<cr>", desc = "Open parent directory"
+        },
         -- second key is the lefthand side of the map
 
         -- navigate buffer tabs with `H` and `L`
