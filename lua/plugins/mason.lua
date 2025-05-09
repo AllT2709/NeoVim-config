@@ -11,7 +11,14 @@ return {
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "lua_ls",
         "ts_ls",
-        "pyright"
+        "pyright",
+        "html",          -- HTML (útil para proyectos web con JS)
+        "cssls",         -- CSS (útil para proyectos web con JS)
+        "jsonls",        -- JSON (útil para configuración)
+        "bashls",        -- Bash (útil para scripts)
+        "yamlls",        -- YAML (útil para configuración)
+        "dockerls",      -- Docker (útil para entornos de desarrollo)
+        "tailwindcss",   -- Tailwind CSS (útil para proyectos web
         -- add more arguments for adding more language servers
       })
     end,
@@ -25,6 +32,13 @@ return {
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "prettier",
         "stylua",
+        "black",
+        "yamlfmt",        -- yml formater
+        "eslint_d",
+        "ruff",           -- Nuevo: reemplazo moderno a flake8/pylint
+        "mypy",
+        "yamllint",       -- yml linter
+        "markdownlint",   -- Opcional si editas Markdown
         -- add more arguments for adding more null-ls sources
       })
     end,
@@ -36,6 +50,7 @@ return {
       -- add more things to the ensure_installed table protecting against community packs modifying it
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
         "python",
+        "js"
         -- add more arguments for adding more debuggers
       })
     end,

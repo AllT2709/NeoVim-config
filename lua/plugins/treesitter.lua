@@ -16,7 +16,7 @@ return {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate", -- Actualiza Treesitter automáticamente
     opts = {
-      ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline","javascript","typescript" }, -- Añade los lenguajes que usas
+      ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline","javascript","typescript","python","yaml" }, -- Añade los lenguajes que usas
       highlight = {
         enable = true,   -- Activa el resaltado de sintaxis
         additional_vim_regex_highlighting = false,
