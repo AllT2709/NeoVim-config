@@ -4,8 +4,8 @@ return {
   priority = 1000,
   opts = {
     -- use the night style
-   style = "moon",
-  -- style = "night",             -- Puedes elegir "night", "storm", "day" o "moon"
+   --style = "moon",
+   --style = "storm",             -- Puedes elegir "night", "storm", "day" o "moon"
 
     transparent = true,          -- Activar transparencia
     terminal_colors = false,      -- Usa colores del tema en el terminal

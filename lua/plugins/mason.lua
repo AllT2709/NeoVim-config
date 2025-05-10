@@ -36,7 +36,6 @@ return {
         "yamlfmt",        -- yml formater
         "eslint_d",
         "ruff",           -- Nuevo: reemplazo moderno a flake8/pylint
-        "mypy",
         "yamllint",       -- yml linter
         "markdownlint",   -- Opcional si editas Markdown
         -- add more arguments for adding more null-ls sources
