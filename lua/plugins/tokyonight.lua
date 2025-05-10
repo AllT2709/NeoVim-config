@@ -26,6 +26,11 @@ return {
         hl["@variable.builtin"] = { italic = true, fg = c.red }
         hl["@punctuation.bracket"] = { fg = "#82aaff" }
 
+        hl["@include"] = { fg = c.purple, italic = true }       -- `import` o `include`
+        hl["@namespace"] = { fg = c.orange, italic = true }     -- nombres de módulos o namespaces
+        hl["@type.qualifier"] = { fg = c.orange, italic = true } -- `from`, `export`, etc.
+        hl["@keyword.import"] = { fg = c.purple, italic = true } -- en algunos parsers
+
         hl.DiagnosticVirtualTextHint = {fg = "#4fd6be"}
         hl.DiagnosticVirtualTextError = {fg = "#c53b53"}
         hl.DiagnosticVirtualTextInfo = {fg = "#0db9d7"}
