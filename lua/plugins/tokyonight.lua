@@ -22,7 +22,7 @@ return {
     end,
     on_highlights = function(hl, c)
 
-        hl["@variable.parameter"] = { fg = c.orange, italic = true, bg = c.bg_highlight }  -- Color para parámetros de funciones
+        hl["@variable.parameter"] = { fg = c.orange, italic = true }  -- Color para parámetros de funciones
         hl["@variable.builtin"] = { italic = true, fg = c.red }
         hl["@punctuation.bracket"] = { fg = "#82aaff" }
 
@@ -30,6 +30,8 @@ return {
         hl.DiagnosticVirtualTextError = {fg = "#c53b53"}
         hl.DiagnosticVirtualTextInfo = {fg = "#0db9d7"}
         hl.DiagnosticVirtualTextWarn = {fg = "#ffc777"}
+
+        hl.CursorLine = { bg = "none"}
 
         hl.StatusLine = { bg = "none", fg = c.fg }
         hl.StatusLineNC = { bg = "none", fg = c.fg_dark }
